@@ -1,4 +1,7 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang="pt-BR">
 <head>
+    <meta charset="UTF-8" /> 
     <title>NQueens</title>
     <style>
         ul{
@@ -6,6 +9,7 @@
         }
         #tabuleiro
         {
+            float: left;
             margin: 0px;
             padding: 0px;
         }
@@ -36,6 +40,7 @@
             background-color: blue;
         }
         .console{
+            float: right;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 12px;
         }
@@ -209,7 +214,6 @@
 
                 while(true)
                 {
-                    console.log(this.stack)
                     s = this.stack.pop()
                     if (typeof s === "undefined")
                         return null
@@ -452,3 +456,4 @@
 
     </nav>
 </body>
+</html>
